@@ -183,8 +183,11 @@ export default {
       background-color: $lightkhaki;
       position: relative;
       display: grid;
-      grid-auto-flow: column;
-      padding: 30px 30px 0;
+      padding: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 1rem;
+      grid-auto-flow: dense;
+      justify-items: center;
 
       .recommended {
         background-color: $gold;
@@ -200,11 +203,13 @@ export default {
         @extend .round;
         @extend .shadowed;
 
-        max-width: 264px;
-        margin-right: 18px;
+        max-width: 100%;
       }
 
       .book-info {
+        grid-column: auto / span 2;
+        text-align: justify;
+
         .title {
           margin-top: 0;
           margin-bottom: 0;
@@ -224,8 +229,9 @@ export default {
 
       .books-list {
         display: grid;
-        grid-auto-flow: column;
-        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-gap: 1rem;
+        grid-auto-flow: dense;
 
         .book {
           background-color: $lightkhaki;

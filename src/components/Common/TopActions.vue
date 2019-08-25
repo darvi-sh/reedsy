@@ -37,36 +37,43 @@ export default {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    padding: 5px 30px 0;
+    padding: 15px 30px 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-flow: row;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
 
     .top-logo {
       background-color: silver;
       display: inline-block;
-      width: 200px;
+      min-width: 100px;
+      max-width: 200px;
       height: 30px;
       line-height: 30px;
       text-align: center;
       border-radius: 5px;
     }
 
-    ul {
-      display: grid;
-      grid-auto-flow: column;
-      grid-column-gap: 15px;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+    .top-menu {
+      ul {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 15px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 
-      li {
-        padding: 5px;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 5px;
+        li {
+          padding: 5px;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 5px;
 
-        &.active {
-          background-color: $gold;
-          color: white;
-          padding: 5px 10px;
+          &.active {
+            background-color: $gold;
+            color: white;
+            padding: 5px 10px;
+          }
         }
       }
     }
