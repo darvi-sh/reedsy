@@ -8,7 +8,7 @@
             <a>Home</a>
           </li>
           <li>
-            <a>Just added</a>
+            <router-link :to='`/books`'>Just added</router-link>
           </li>
           <li class='active'>
             <a>Top books</a>
@@ -69,10 +69,17 @@ export default {
           text-align: center;
           border-radius: 5px;
 
+          a {
+            color: $superdarkgrey;
+          }
+
           &.active {
             background-color: $gold;
-            color: white;
             padding: 5px 10px;
+
+            a {
+              color: white;
+            }
           }
         }
       }

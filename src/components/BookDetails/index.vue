@@ -1,9 +1,5 @@
 <template>
   <div class='book'>
-    <router-link class='back-btn text-darkgold' :to='`/books`'>
-      &lt; Books list
-    </router-link>
-
     <div class='title-votes-wrapper'>
       <div class="title">
         <h1 class='text-darkgold'>
@@ -72,10 +68,6 @@ export default {
 
 <style lang='scss' scoped>
 .book {
-  .back-btn {
-    font-size: 12px;
-  }
-
   .title-votes-wrapper {
     margin-top: 1rem;
     display: grid;

@@ -1,5 +1,9 @@
 <template>
   <div class='bookPage'>
+    <router-link class='back-btn text-darkgold text-14' :to='`/books`'>
+      &lt; Books list
+    </router-link>
+
     <book-details :book-slug='bookSlug' />
   </div>
 </template>
