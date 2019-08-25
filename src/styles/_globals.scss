@@ -1,0 +1,63 @@
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Biryani:200,300,400,600,700,800,900&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Sarala:400,700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Biryani", Helvetica, Arial, sans-serif;
+}
+
+.text-gold {
+	color: $gold;
+}
+
+.text-mediumgold {
+	color: $gold;
+}
+
+.text-darkgold {
+	color: $darkgold;
+}
+
+.text-lightkhaki {
+	color: $lightkhaki;
+}
+
+.text-superdarkgrey {
+	color: $superdarkgrey;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-white {
+	color: white;
+}
+
+.round {
+	border-radius: 5px;
+}
+
+.shadowed {
+	box-shadow: 0 2px 5px #cccccc;
+}
+
+.vote-btn {
+	border: 2px solid $mediumgold;
+	background-color: $mediumgold;
+	color: white;
+	font-size: 1em;
+	padding: 5px 12px;
+	border-radius: 5px;
+	font-weight: bold;
+
+	&.outlined {
+		background-color: white;
+		color: $mediumgold;
+	}
+}
