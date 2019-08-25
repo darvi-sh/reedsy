@@ -5,7 +5,7 @@
 yarn install
 ```
 
-### Configure application
+### ❗ Configure application ⚙️
 Update the `VUE_APP_API_URL` variable in `.env` file with the appropriate API URL.
 
 ### Compiles and hot-reloads for development
