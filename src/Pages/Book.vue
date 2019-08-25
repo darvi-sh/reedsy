@@ -1,5 +1,5 @@
 <template>
-  <div class='book'>
+  <div class='bookPage'>
     <book-details :book-slug='bookSlug' />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import BookDetails from '@/components/BookDetails';
 
 export default {
-  name: 'Book',
+  name: 'BookPage',
   props: ['bookSlug'],
   components: {
     BookDetails,
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.book {
+.bookPage {
   max-width: 650px;
   margin: 0 auto;
   box-shadow: 0 0 10px #dddddd;

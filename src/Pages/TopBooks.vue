@@ -1,5 +1,5 @@
 <template>
-  <div class='TopBooks'>
+  <div class='TopBooksPage'>
     <top-actions />
     <main-content />
     <footer-links />
@@ -12,7 +12,7 @@ import MainContent from '@/components/TopBooks';
 import FooterLinks from '@/components/Common/FooterLinks';
 
 export default {
-  name: 'TopBooks',
+  name: 'TopBooksPage',
   components: {
     TopActions,
     MainContent,

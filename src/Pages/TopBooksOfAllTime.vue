@@ -1,5 +1,5 @@
 <template>
-  <div class='TopBooksOfAllTime'>
+  <div class='TopBooksOfAllTimePage'>
     <h1 class='text-mediumgold title' align='center'>
       Top books of all time
     </h1>
@@ -11,7 +11,7 @@
 import MainContent from '@/components/TopBooksOfAllTime';
 
 export default {
-  name: 'TopBooksOfAllTime',
+  name: 'TopBooksOfAllTimePage',
   components: {
     MainContent,
   },
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.TopBooksOfAllTime {
+.TopBooksOfAllTimePage {
   max-width: 650px;
   margin: 0 auto;
   box-shadow: 0 0 10px #dddddd;
